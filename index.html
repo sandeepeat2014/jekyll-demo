@@ -1,0 +1,31 @@
+---
+layout: default
+title: Eaton DSET
+---
+
+<div id="main">
+	<div class="inner">
+		<header>
+			<h1>Welcome to the Eaton Digital Solutions Enablement Team!</h1>
+			<p>We are short live enablers in Eaton! Explore our projects below...</p>
+		</header>
+		<section class="tiles">
+			{% for item in site.portfolio %}
+			<article class="{{item.articlestyle}}">
+				<span class="image">
+					<img src="{{item.imagesrc}}" alt="" />
+				</span>
+				<a href="{{item.projectgenhtml}}">
+					<i class="{{item.fonticonstyle}}}}"></i>
+					<h2>{{item.projecttitle}}</h2>
+					<div class="content">
+						<p>{{item.projectshortdesc}}</p>
+					</div>
+				</a>
+			</article>
+			{% endfor %}
+		</section>
+	</div>
+</div>
+
+				
